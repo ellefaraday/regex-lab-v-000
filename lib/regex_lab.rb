@@ -1,11 +1,7 @@
 
 
 def starts_with_a_vowel?(word)
-  if word.match(/^[aeiouAEIOU]\w*/) == nil
-    false
-  else
-    true
-  end
+  word.match(/^[aeiouAEIOU]\w*/) ? true : false
 end
 
 puts starts_with_a_vowel?("octopus")
