@@ -19,9 +19,5 @@ end
 
 def valid_phone_number?(phone)
   phone.delete! '() -'
-  if phone.match(/\b\d{10}\b/) != nil
-    true
-  else
-    false
-  end
+  phone.match(/\b\d{10}\b/) ? true : false
 end
