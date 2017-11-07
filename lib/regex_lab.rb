@@ -10,7 +10,7 @@ end
 
 puts starts_with_a_vowel?("octopus")
 def words_starting_with_un_and_ending_with_ing(text)
-  text.scan(/\bun\w*ing/)
+  text.scan(/un\w*ing\b/)
 end
 
 def words_five_letters_long(text)
